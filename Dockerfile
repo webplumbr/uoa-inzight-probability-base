@@ -13,7 +13,7 @@ ENV BUILD_DATE "2016-01-25"
 
 # Install (via R) all of the necessary packages (R will automatially install dependencies):
 RUN R -e "install.packages( \
-            c('colorspace', 'grid'), \ 
+            c('colorspace'), \ 
             repos='http://cran.rstudio.com/' \ 
           )" \
   && rm -rf /tmp/* /var/tmp/*
